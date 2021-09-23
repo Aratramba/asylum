@@ -1,0 +1,78 @@
+.area {
+  border-radius: 10px;
+  border: 2px dashed #999;
+  padding: 60px 30px;
+  position: relative;
+  text-align: center;
+  transition: border-color 0.15s, background 0.15s, opacity 0.15s;
+
+  & svg {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+  }
+
+  &.import {
+    padding: 60px 30px;
+  }
+
+  &.export {
+    padding: 15px 30px;
+  }
+}
+
+
+.default {
+  &:active,
+  &:hover {
+    border: 2px solid royalblue;
+  }
+}
+
+.hovering {
+  background: rgba(65, 105, 255, 0.1);
+  border: 2px solid royalblue;
+}
+
+.success {
+  border: 2px solid green;
+  background: rgba(0, 255, 0, 0.1);
+}
+
+.loading {
+  background: rgba(65, 105, 255, 0.1);
+  border: 2px solid royalblue;
+  opacity: 0.5;
+}
+
+.mutationsTable {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+  font-size: .9em;
+  margin-top: 1em;
+  width: 100%;
+
+  & th,
+  & td {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 6px;
+    text-align: left;
+  } 
+
+  & .spacer {
+    width: 12px;
+  }
+}
+
+.fieldName {
+
+}
+
+.oldValue {
+  text-decoration: line-through;
+  text-decoration-color: rgba(0,0,0,.5);}
+
+.newValue {
+color: #3ab667
+}

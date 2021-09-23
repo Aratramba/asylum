@@ -1,0 +1,37 @@
+.area {
+  border-radius: 10px;
+  padding: 60px 30px;
+  border: 2px dashed #999;
+  text-align: center;
+  transition: border-color 0.15s, background 0.15s, opacity 0.15s;
+  position: relative;
+
+  & svg {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.default {
+  &:active,
+  &:hover {
+    border: 2px solid royalblue;
+  }
+}
+
+.hovering {
+  border: 2px solid royalblue;
+  background: rgba(65, 105, 255, 0.1);
+}
+
+.success {
+  border: 2px solid green;
+  background: rgba(0, 255, 0, 0.1);
+}
+
+.loading {
+  border: 2px solid royalblue;
+  background: rgba(65, 105, 255, 0.1);
+  opacity: 0.5;
+}

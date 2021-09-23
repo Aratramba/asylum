@@ -1,0 +1,9 @@
+/* @import "@eightmedia/sanity-plugin-theme-eightmedia/lib/style/eightmedia.css"; */
+
+.hello {
+  background-color: crimson;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  height: 100%;
+  color: white;
+  padding: 20px;
+}
